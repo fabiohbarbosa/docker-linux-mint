@@ -1,5 +1,5 @@
 FROM vcatechnology/ubuntu:16.04
-MAINTAINER VCA Technology <developers@vcatechnology.com>
+MAINTAINER fabiohbarbosa <fabiohbarbosa@gmail.com>
 
 # Set up the Linux Mint repositories
 RUN REPO_LIST=/etc/apt/sources.list.d/mint.list \
