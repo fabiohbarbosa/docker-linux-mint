@@ -3,8 +3,8 @@ MAINTAINER fabiohbarbosa <fabiohbarbosa@gmail.com>
 
 # Set up the Linux Mint repositories
 RUN REPO_LIST=/etc/apt/sources.list.d/mint.list \
- && echo "deb http://packages.linuxmint.com/ rafaela main upstream import " > ${REPO_LIST} \
- && echo "deb http://extra.linuxmint.com/ rafaela main " >> ${REPO_LIST} \
+ && echo "deb http://packages.linuxmint.com/ rebecca main upstream import " > ${REPO_LIST} \
+ && echo "deb http://extra.linuxmint.com/ rebecca main " >> ${REPO_LIST} \
  && LINUX_MINT_KEY=$(apt update 2>&1 | grep -o '[0-9A-Z]\{16\}$' | xargs) \
  && apt-key adv --recv-keys --keyserver keyserver.ubuntu.com ${LINUX_MINT_KEY} \
  && vca-install-package --allow-unauthenticated linuxmint-keyring \
