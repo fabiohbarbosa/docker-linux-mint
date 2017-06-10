@@ -1,0 +1,11 @@
+---
+sudo: required
+
+services:
+  - docker
+
+script:
+  - bash test.sh
+
+notifications:
+  email: false
