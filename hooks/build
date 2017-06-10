@@ -1,2 +1,2 @@
 #!/usr/bin/env sh
-docker build -t fabiohbarbosa/linux-mint:18.1 .
+docker build -t fabiohbarbosa/linux-mint:18.2 .
